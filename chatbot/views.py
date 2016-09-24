@@ -12,7 +12,7 @@ import requests
 # Create your views here.
 
 VERIFY_TOKEN = '24thseptember2016'
-PAGE_ACCESS_TOKEN = 'EAAO89xUqo7gBAFjraGZANRW5siecgPgIvxnQ858ZALgtWr9XH2m9EjCJZCwSpxvLGZB9Cl8uHDaj21ZAuraxaqcj8SrPkbjig5ov8RuDomd9N18iBFL8c1G2tqbFwJLa5IBfqhYzp9XAqDP0ILTPqcKGcqhKaUBd26XdFemp3xwZDZD'
+PAGE_ACCESS_TOKEN = 'EAAO89xUqo7gBABxZBZC4G6PRp3pOVckcvxbMmR89ZBJmMjj2kAuvtPL0x2FhjEyBh4BIi7X6pGUVmtWdxpSWeb6MCFILrm643RuAS1XqIhOgJ3Ud3Q5EZARJM3lplvwNUvIXeRvepmMD0VYfsrAFNgfrZCN3EfGnTPgPKc14vcgZDZD'
 
 def index(request):
 	# colour=request.GET['text']
