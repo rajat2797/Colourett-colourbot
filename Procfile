@@ -1,1 +1,1 @@
-web: gunicorn chatbot.wsgi
+web: gunicorn colourbro.wsgi
