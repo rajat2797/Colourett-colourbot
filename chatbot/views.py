@@ -71,26 +71,26 @@ def post_facebook_message(fbid,message_text):
 				  }
 				}
 			}
-	response_msg_image = {
-				"recipient":{
-				    "id":fbid
-				  },
-				  "message":{
-				    "attachment":{
-				      "type":"image",
-				      "payload":{
-				        "url":image_url
-				      }
-				    }
-				  }
+	# response_msg_image = {
+	# 			"recipient":{
+	# 			    "id":fbid
+	# 			  },
+	# 			  "message":{
+	# 			    "attachment":{
+	# 			      "type":"image",
+	# 			      "payload":{
+	# 			        "url":image_url
+	# 			      }
+	# 			    }
+	# 			  }
 
-	}
+	# }
 
 	response_msg = json.dumps({"recipient":{"id":fbid}, "message":{"text":output_text}})
-	response_msg_image = json.dumps(response_msg_image)
+	# response_msg_image = json.dumps(response_msg_image)
 	response_msg_generic = json.dumps(response_msg_generic)
 	requests.post(post_message_url, headers={"Content-Type": "application/json"},data=response_msg)
-	requests.post(post_message_url, headers={"Content-Type": "application/json"},data=response_msg_image)
+	# requests.post(post_message_url, headers={"Content-Type": "application/json"},data=response_msg_image)
 	requests.post(post_message_url, headers={"Content-Type": "application/json"},data=response_msg_generic)
 
 def logg(message,symbol='-'):
